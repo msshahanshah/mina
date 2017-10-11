@@ -10,7 +10,7 @@ require 'mina/git'
 #   branch       - Branch name to deploy. (needed by mina/git)
 
 set :application_name, 'tester'
-set :domain, 'tester.com'
+set :domain, '127.0.0.1'
 set :deploy_to, '/code/tester.com'
 set :repository, 'git@github.com:msshahanshah/mina.git'
 set :branch, 'master'
