@@ -1,7 +1,7 @@
 require 'mina/rails'
 require 'mina/git'
 # require 'mina/rbenv'  # for rbenv support. (https://rbenv.org)
-# require 'mina/rvm'    # for rvm support. (https://rvm.io)
+require 'mina/rvm'    # for rvm support. (https://rvm.io)
 
 # Basic settings:
 #   domain       - The hostname to SSH to.
@@ -15,6 +15,7 @@ set :deploy_to, '/code/tester.com'
 set :repository, 'git@github.com:msshahanshah/mina.git'
 set :branch, 'master'
 
+invoke :'rvm:use', 'ruby-2.3.3'
 # Optional settings:
 #   set :user, 'foobar'          # Username in the server to SSH to.
 #   set :port, '30000'           # SSH port number.
@@ -34,7 +35,7 @@ task :environment do
   # invoke :'rbenv:load'
 
   # For those using RVM, use this to load an RVM version@gemset.
-  # invoke :'rvm:use', 'ruby-1.9.3-p125@default'
+  # invoke :'rvm:use', 'ruby-2.3.3'
 end
 
 # Put any custom commands you need to run at setup
