@@ -11,8 +11,8 @@ require 'mina/git'
 
 set :application_name, 'tester'
 set :domain, 'tester.com'
-set :deploy_to, '/var/www/tester.com'
-set :repository, 'git://...'
+set :deploy_to, '/code/tester.com'
+set :repository, 'git@github.com:msshahanshah/mina.git'
 set :branch, 'master'
 
 # Optional settings:
