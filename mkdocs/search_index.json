@@ -19,6 +19,16 @@
             "location": "/#project-layout", 
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
             "title": "Project layout"
+        }, 
+        {
+            "location": "/deploy/", 
+            "text": "Here I am going to list down the tasks that need to be performed when deploying code to a server.", 
+            "title": "Deploy"
+        }, 
+        {
+            "location": "/deploy/#here-i-am-going-to-list-down-the-tasks-that-need-to-be-performed-when-deploying-code-to-a-server", 
+            "text": "", 
+            "title": "Here I am going to list down the tasks that need to be performed when deploying code to a server."
         }
     ]
 }
